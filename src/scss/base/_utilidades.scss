@@ -1,0 +1,19 @@
+.seccion {
+    margin-top: calc($separacion / 2);
+    margin-bottom: calc($separacion / 2);
+}
+.contenido-centrado {
+    max-width: 800px;
+    padding: 2rem;
+    margin: 2rem auto;
+
+    h1 {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.aling-rigth {
+    display: flex;
+    justify-content: flex-end;
+}

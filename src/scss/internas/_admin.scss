@@ -1,0 +1,55 @@
+.alerta {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 1rem;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: $rojo;
+    }
+    &.error {
+        background-color: rgba($color: $rojo, $alpha: .2);
+        &::before {
+            background-color: $rojo;
+        }
+    }
+    &.exito {
+        background-color: rgba($color: $verde, $alpha: .2);
+        &::before {
+            background-color: $verde;
+        }
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        background-color: $verde;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    .imagen-tabla {
+        margin: 0 auto;
+        width: 10rem;
+    }
+}
+
+.imagen-small {
+    width: 20rem;
+    margin-bottom: 2rem;
+    pointer-events: none;
+}
